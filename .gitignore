@@ -1,0 +1,13 @@
+*.dxf
+*.gbr
+*.bin
+*.dsn
+*-bak
+*.wrl
+*.ses
+*.gbrjob
+*.rules
+*.pro
+_autosave-*.sch
+/fp-info-cache
+/sym-lib-table
