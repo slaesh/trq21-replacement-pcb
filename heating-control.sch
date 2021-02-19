@@ -1438,10 +1438,10 @@ LCD_LED_ON
 Wire Wire Line
 	8750 6050 8750 5950
 $Comp
-L 1my-stuff:logo logo?
+L 1my-stuff:logo logo1
 U 1 1 605262C5
 P 10800 6800
-F 0 "logo?" H 10825 6846 50  0000 L CNN
+F 0 "logo1" H 10825 6846 50  0000 L CNN
 F 1 "logo" H 10825 6755 50  0000 L CNN
 F 2 "footprints:logo_me" H 10800 6800 50  0001 C CNN
 F 3 "" H 10800 6800 50  0001 C CNN
