@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L heating-control-rescue:AD5721RBRUZ-AD5721RBRUZ IC1
+L heating-control-rescue:AD5721RBRUZ-AD5721RBRUZ-heating-control-rescue IC1
 U 1 1 602BF7FE
 P 1350 2000
 F 0 "IC1" H 2200 2265 50  0000 C CNN
@@ -31,7 +31,7 @@ F 9 "AD5721RBRUZ" H 2900 1400 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L heating-control-rescue:PCF8563T_5,518-PCF8563T_5_518 IC2
+L heating-control-rescue:PCF8563T_5,518-PCF8563T_5_518-heating-control-rescue IC2
 U 1 1 602C1711
 P 8450 1650
 F 0 "IC2" H 9050 1915 50  0000 C CNN
@@ -56,7 +56,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 6350 3400 6350
 $Comp
-L heating-control-rescue:VXO7803-500-M-TR-VXO7803-500-M-TR IC3
+L heating-control-rescue:VXO7803-500-M-TR-VXO7803-500-M-TR-heating-control-rescue IC3
 U 1 1 602D38A3
 P 1600 6250
 F 0 "IC3" H 2350 6515 50  0000 C CNN
@@ -243,7 +243,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 2000 3300 2000
 $Comp
-L heating-control-rescue:LM4040DYM3-2.5-TR-LM4040DYM3-2.5-TR IC4
+L heating-control-rescue:LM4040DYM3-2.5-TR-LM4040DYM3-2.5-TR-heating-control-rescue IC4
 U 1 1 602F7A60
 P 1800 1300
 F 0 "IC4" H 2250 1565 50  0000 C CNN
@@ -746,49 +746,49 @@ Wire Wire Line
 $Comp
 L EN12-HS11AF25:EN12-HS11AF25 U2
 U 1 1 603843B6
-P 5200 4300
-F 0 "U2" H 6244 4346 50  0000 L CNN
-F 1 "EN12-HS11AF25" H 6244 4255 50  0000 L CNN
-F 2 "footprints:EN12HS11AF25" H 6050 4600 50  0001 L CNN
-F 3 "" H 6050 4500 50  0001 L CNN
-F 4 "Mechanical Encoder Rotary Incremental Flat 0.01N.m Straight Gray Digital Square Wave 12PPR Through Hole PC Pin" H 6050 4400 50  0001 L CNN "Description"
-F 5 "25" H 6050 4300 50  0001 L CNN "Height"
-F 6 "" H 6050 4200 50  0001 L CNN "Mouser2 Part Number"
-F 7 "" H 6050 4100 50  0001 L CNN "Mouser2 Price/Stock"
-F 8 "BI Technologies" H 6050 4000 50  0001 L CNN "Manufacturer_Name"
-F 9 "EN12-HS11AF25" H 6050 3900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5200 4300
+P 4500 3850
+F 0 "U2" H 5544 3896 50  0000 L CNN
+F 1 "EN12-HS11AF25" H 5544 3805 50  0000 L CNN
+F 2 "footprints:EN12HS11AF25" H 5350 4150 50  0001 L CNN
+F 3 "" H 5350 4050 50  0001 L CNN
+F 4 "Mechanical Encoder Rotary Incremental Flat 0.01N.m Straight Gray Digital Square Wave 12PPR Through Hole PC Pin" H 5350 3950 50  0001 L CNN "Description"
+F 5 "25" H 5350 3850 50  0001 L CNN "Height"
+F 6 "" H 5350 3750 50  0001 L CNN "Mouser2 Part Number"
+F 7 "" H 5350 3650 50  0001 L CNN "Mouser2 Price/Stock"
+F 8 "BI Technologies" H 5350 3550 50  0001 L CNN "Manufacturer_Name"
+F 9 "EN12-HS11AF25" H 5350 3450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4500 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0121
 U 1 1 60387EC1
-P 5600 3700
-F 0 "#PWR0121" H 5600 3450 50  0001 C CNN
-F 1 "GND" V 5605 3572 50  0000 R CNN
-F 2 "" H 5600 3700 50  0001 C CNN
-F 3 "" H 5600 3700 50  0001 C CNN
-	1    5600 3700
+P 4900 3250
+F 0 "#PWR0121" H 4900 3000 50  0001 C CNN
+F 1 "GND" V 4905 3122 50  0000 R CNN
+F 2 "" H 4900 3250 50  0001 C CNN
+F 3 "" H 4900 3250 50  0001 C CNN
+	1    4900 3250
 	0    1    1    0   
 $EndComp
-Text Label 5700 3700 0    50   ~ 0
+Text Label 5000 3250 0    50   ~ 0
 BUTTON
 Wire Wire Line
-	5700 3700 5700 3800
+	5000 3250 5000 3350
 Wire Wire Line
-	5600 3800 5600 3700
-Text GLabel 5700 4950 3    50   Input ~ 10
+	4900 3350 4900 3250
+Text GLabel 5000 4500 3    50   Input ~ 10
 VCC3V3
 Wire Wire Line
-	5700 4950 5700 4800
-Text Label 5600 4950 3    50   ~ 0
+	5000 4500 5000 4350
+Text Label 4900 4500 3    50   ~ 0
 ENCODER_A
-Text Label 5800 4950 3    50   ~ 0
+Text Label 5100 4500 3    50   ~ 0
 ENCODER_B
 Wire Wire Line
-	5600 4950 5600 4800
+	4900 4500 4900 4350
 Wire Wire Line
-	5800 4950 5800 4800
+	5100 4500 5100 4350
 Text Label 10000 4900 0    50   ~ 0
 ENCODER_A
 Text Label 10000 4800 0    50   ~ 0
@@ -1214,10 +1214,10 @@ Wire Wire Line
 Wire Wire Line
 	5650 1350 5500 1350
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP6
 U 1 1 60597D8B
 P 7350 950
-F 0 "TP?" V 7304 1138 50  0000 L CNN
+F 0 "TP6" V 7304 1138 50  0000 L CNN
 F 1 "TestPoint" V 7395 1138 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7550 950 50  0001 C CNN
 F 3 "~" H 7550 950 50  0001 C CNN
@@ -1225,10 +1225,10 @@ F 3 "~" H 7550 950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP7
 U 1 1 60598090
 P 7350 1150
-F 0 "TP?" V 7304 1338 50  0000 L CNN
+F 0 "TP7" V 7304 1338 50  0000 L CNN
 F 1 "TestPoint" V 7395 1338 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7550 1150 50  0001 C CNN
 F 3 "~" H 7550 1150 50  0001 C CNN
@@ -1236,10 +1236,10 @@ F 3 "~" H 7550 1150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP8
 U 1 1 605984A1
 P 7350 1350
-F 0 "TP?" V 7304 1538 50  0000 L CNN
+F 0 "TP8" V 7304 1538 50  0000 L CNN
 F 1 "TestPoint" V 7395 1538 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7550 1350 50  0001 C CNN
 F 3 "~" H 7550 1350 50  0001 C CNN
@@ -1255,10 +1255,10 @@ SPI_MOSI
 Text Label 7200 1350 2    50   ~ 0
 SPI_CLK
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP9
 U 1 1 6059AC87
 P 7350 1550
-F 0 "TP?" V 7304 1738 50  0000 L CNN
+F 0 "TP9" V 7304 1738 50  0000 L CNN
 F 1 "TestPoint" V 7395 1738 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7550 1550 50  0001 C CNN
 F 3 "~" H 7550 1550 50  0001 C CNN
@@ -1277,4 +1277,175 @@ Wire Wire Line
 	7350 1350 7200 1350
 Wire Wire Line
 	7200 1550 7350 1550
+$Comp
+L Connector:Conn_01x08_Female J2
+U 1 1 60307B7B
+P 1300 5100
+F 0 "J2" H 1328 5076 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 1328 4985 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1300 5100 50  0001 C CNN
+F 3 "~" H 1300 5100 50  0001 C CNN
+	1    1300 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  4800 0    50   Input ~ 10
+VCC3V3
+$Comp
+L power:GND #PWR0129
+U 1 1 6030B4AD
+P 950 4900
+F 0 "#PWR0129" H 950 4650 50  0001 C CNN
+F 1 "GND" V 955 4772 50  0000 R CNN
+F 2 "" H 950 4900 50  0001 C CNN
+F 3 "" H 950 4900 50  0001 C CNN
+	1    950  4900
+	0    1    1    0   
+$EndComp
+Text Label 950  5000 2    50   ~ 0
+SCL
+Text Label 950  5100 2    50   ~ 0
+SDA
+Wire Wire Line
+	950  4800 1100 4800
+Wire Wire Line
+	1100 4900 950  4900
+Wire Wire Line
+	950  5000 1100 5000
+Wire Wire Line
+	1100 5100 950  5100
+$Comp
+L 1my-stuff:LCD_128x64 LCD1
+U 1 1 60386C86
+P 3750 5150
+F 0 "LCD1" H 4278 5196 50  0000 L CNN
+F 1 "LCD_128x64" H 4278 5105 50  0000 L CNN
+F 2 "my-stuff.pretty:lcd_test" H 3750 4450 50  0001 C CNN
+F 3 "" H 3350 5250 50  0001 C CNN
+	1    3750 5150
+	1    0    0    -1  
+$EndComp
+Text Label 3000 4600 2    50   ~ 0
+SPI_CLK
+Text Label 3000 4700 2    50   ~ 0
+SPI_MOSI
+Text GLabel 3000 4800 0    50   Input ~ 10
+VCC3V3
+$Comp
+L power:GND #PWR0130
+U 1 1 603BD8E9
+P 3000 5200
+F 0 "#PWR0130" H 3000 4950 50  0001 C CNN
+F 1 "GND" V 3005 5072 50  0000 R CNN
+F 2 "" H 3000 5200 50  0001 C CNN
+F 3 "" H 3000 5200 50  0001 C CNN
+	1    3000 5200
+	0    1    1    0   
+$EndComp
+Text Label 3000 4900 2    50   ~ 0
+LCD_A0
+Text Label 3000 5000 2    50   ~ 0
+LCD_RESET
+Text Label 3000 5100 2    50   ~ 0
+SPI_CS_LCD
+$Comp
+L power:GND #PWR0131
+U 1 1 603C3954
+P 3000 5500
+F 0 "#PWR0131" H 3000 5250 50  0001 C CNN
+F 1 "GND" V 3005 5372 50  0000 R CNN
+F 2 "" H 3000 5500 50  0001 C CNN
+F 3 "" H 3000 5500 50  0001 C CNN
+	1    3000 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 5500 3150 5500
+Wire Wire Line
+	3000 5200 3150 5200
+Wire Wire Line
+	3000 5100 3150 5100
+Wire Wire Line
+	3150 5000 3000 5000
+Wire Wire Line
+	3000 4900 3150 4900
+Wire Wire Line
+	3150 4800 3000 4800
+Wire Wire Line
+	3000 4700 3150 4700
+Wire Wire Line
+	3150 4600 3000 4600
+Text Label 10000 4500 0    50   ~ 0
+LCD_RESET
+Text Label 10000 4400 0    50   ~ 0
+SPI_CS_LCD
+Text Label 10000 4300 0    50   ~ 0
+LCD_A0
+Wire Wire Line
+	10000 4500 9800 4500
+Wire Wire Line
+	9800 4400 10000 4400
+Wire Wire Line
+	10000 4300 9800 4300
+$Comp
+L Transistor_BJT:MMBT3906 Q1
+U 1 1 60431691
+P 2400 5500
+F 0 "Q1" V 2635 5500 50  0000 C CNN
+F 1 "MMBT3906" V 2726 5500 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2600 5425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 2400 5500 50  0001 L CNN
+	1    2400 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 5600 2600 5600
+$Comp
+L Device:R R5
+U 1 1 6043EAC6
+P 1950 5600
+F 0 "R5" H 2020 5646 50  0000 L CNN
+F 1 "10k" H 2020 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 5600 50  0001 C CNN
+F 3 "~" H 1950 5600 50  0001 C CNN
+	1    1950 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 6043EE45
+P 2400 5050
+F 0 "R6" H 2470 5096 50  0000 L CNN
+F 1 "10k" H 2470 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2330 5050 50  0001 C CNN
+F 3 "~" H 2400 5050 50  0001 C CNN
+	1    2400 5050
+	-1   0    0    1   
+$EndComp
+Text GLabel 1700 5600 0    50   Input ~ 10
+VCC3V3
+Wire Wire Line
+	1700 5600 1800 5600
+Wire Wire Line
+	2100 5600 2200 5600
+Wire Wire Line
+	2400 5300 2400 5200
+Text Label 2400 4800 1    50   ~ 0
+LCD_LED_ON
+Wire Wire Line
+	2400 4800 2400 4900
+Text Label 8750 6050 3    50   ~ 0
+LCD_LED_ON
+Wire Wire Line
+	8750 6050 8750 5950
+$Comp
+L 1my-stuff:logo logo?
+U 1 1 605262C5
+P 10800 6800
+F 0 "logo?" H 10825 6846 50  0000 L CNN
+F 1 "logo" H 10825 6755 50  0000 L CNN
+F 2 "footprints:logo_me" H 10800 6800 50  0001 C CNN
+F 3 "" H 10800 6800 50  0001 C CNN
+	1    10800 6800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

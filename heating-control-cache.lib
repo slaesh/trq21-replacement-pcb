@@ -1,6 +1,41 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# 1my-stuff_LCD_128x64
+#
+DEF 1my-stuff_LCD_128x64 LCD 0 40 Y Y 1 F N
+F0 "LCD" -50 700 50 H V C CNN
+F1 "1my-stuff_LCD_128x64" 250 -600 50 H V C CNN
+F2 "my-stuff.pretty:lcd_test" 0 -700 50 H I C CNN
+F3 "" -400 100 50 H I C CNN
+DRAW
+S -500 650 500 -650 0 1 0 N
+X CLK 1 -600 550 100 R 50 50 1 1 I
+X LED- 10 -600 -350 100 R 50 50 1 1 I
+X LED+ 11 -600 -450 100 R 50 50 1 1 I
+X NC 12 -600 -550 100 R 50 50 1 1 I
+X MOSI 2 -600 450 100 R 50 50 1 1 I
+X VCC 3 -600 350 100 R 50 50 1 1 I
+X A0 4 -600 250 100 R 50 50 1 1 I
+X /RESET 5 -600 150 100 R 50 50 1 1 I
+X /CS 6 -600 50 100 R 50 50 1 1 I
+X GND 7 -600 -50 100 R 50 50 1 1 I
+X Heater+ 8 -600 -150 100 R 50 50 1 1 I
+X Heater- 9 -600 -250 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# 1my-stuff_logo
+#
+DEF 1my-stuff_logo logo 0 0 N N 1 F N
+F0 "logo" 0 0 50 H V C CNN
+F1 "1my-stuff_logo" 0 0 50 H V C CNN
+F2 "footprints:logo_me" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+ENDDRAW
+ENDDEF
+#
 # 1my-stuff_slaesh_stick
 #
 DEF 1my-stuff_slaesh_stick U 0 40 Y Y 1 F N
@@ -84,6 +119,44 @@ X SI 5 1100 -300 200 L 50 50 0 0 P
 X SCK 6 1100 -200 200 L 50 50 0 0 P
 X ~HOLD 7 1100 -100 200 L 50 50 0 0 P
 X VCC 8 1100 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_01x08_Female
+#
+DEF Connector_Conn_01x08_Female J 0 40 Y N 1 F N
+F0 "J" 0 400 50 H V C CNN
+F1 "Connector_Conn_01x08_Female" 0 -500 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -400 20 901 -901 1 1 6 N 0 -380 0 -420
+A 0 -300 20 901 -901 1 1 6 N 0 -280 0 -320
+A 0 -200 20 901 -901 1 1 6 N 0 -180 0 -220
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+A 0 100 20 901 -901 1 1 6 N 0 120 0 80
+A 0 200 20 901 -901 1 1 6 N 0 220 0 180
+A 0 300 20 901 -901 1 1 6 N 0 320 0 280
+P 2 1 1 6 -50 -400 -20 -400 N
+P 2 1 1 6 -50 -300 -20 -300 N
+P 2 1 1 6 -50 -200 -20 -200 N
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+P 2 1 1 6 -50 100 -20 100 N
+P 2 1 1 6 -50 200 -20 200 N
+P 2 1 1 6 -50 300 -20 300 N
+X Pin_1 1 -200 300 150 R 50 50 1 1 P
+X Pin_2 2 -200 200 150 R 50 50 1 1 P
+X Pin_3 3 -200 100 150 R 50 50 1 1 P
+X Pin_4 4 -200 0 150 R 50 50 1 1 P
+X Pin_5 5 -200 -100 150 R 50 50 1 1 P
+X Pin_6 6 -200 -200 150 R 50 50 1 1 P
+X Pin_7 7 -200 -300 150 R 50 50 1 1 P
+X Pin_8 8 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -344,11 +417,34 @@ X VCC 8 1000 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# heating-control-rescue_AD5721RBRUZ-AD5721RBRUZ
+# Transistor_BJT_MMBT3906
 #
-DEF heating-control-rescue_AD5721RBRUZ-AD5721RBRUZ IC 0 30 Y Y 1 F N
+DEF Transistor_BJT_MMBT3906 Q 0 0 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "Transistor_BJT_MMBT3906" 200 0 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23" 200 -75 50 H I L CIN
+F3 "" 0 0 50 H I L CNN
+ALIAS BC808 BC856 BC857 BC858 BC859 BC860 MMBT3906
+$FPLIST
+ SOT?23*
+$ENDFPLIST
+DRAW
+C 50 0 111 0 1 10 N
+P 2 0 1 0 25 25 100 100 N
+P 3 0 1 0 25 -25 100 -100 100 -100 N
+P 3 0 1 20 25 75 25 -75 25 -75 N
+P 5 0 1 0 90 -70 70 -90 50 -50 90 -70 90 -70 F
+X B 1 -200 0 225 R 50 50 1 1 I
+X E 2 100 -200 100 U 50 50 1 1 P
+X C 3 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# heating-control-rescue_AD5721RBRUZ-AD5721RBRUZ-heating-control-rescue
+#
+DEF heating-control-rescue_AD5721RBRUZ-AD5721RBRUZ-heating-control-rescue IC 0 30 Y Y 1 F N
 F0 "IC" 1550 300 50 H V L CNN
-F1 "heating-control-rescue_AD5721RBRUZ-AD5721RBRUZ" 1550 200 50 H V L CNN
+F1 "heating-control-rescue_AD5721RBRUZ-AD5721RBRUZ-heating-control-rescue" 1550 200 50 H V L CNN
 F2 "SOP65P640X120-16N" 1550 100 50 H I L CNN
 F3 "https://componentsearchengine.com//AD5721RBRUZ.pdf" 1550 0 50 H I L CNN
 F4 "ANALOG DEVICES - AD5721RBRUZ - DAC, 12BIT, SPI, TSSOP-16" 1550 -100 50 H I L CNN "Description"
@@ -378,11 +474,11 @@ X DNC 9 1700 -700 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# heating-control-rescue_LM4040DYM3-2.5-TR-LM4040DYM3-2.5-TR
+# heating-control-rescue_LM4040DYM3-2.5-TR-LM4040DYM3-2.5-TR-heating-control-rescue
 #
-DEF heating-control-rescue_LM4040DYM3-2.5-TR-LM4040DYM3-2.5-TR IC 0 30 Y Y 1 F N
+DEF heating-control-rescue_LM4040DYM3-2.5-TR-LM4040DYM3-2.5-TR-heating-control-rescue IC 0 30 Y Y 1 F N
 F0 "IC" 750 300 50 H V L CNN
-F1 "heating-control-rescue_LM4040DYM3-2.5-TR-LM4040DYM3-2.5-TR" 750 200 50 H V L CNN
+F1 "heating-control-rescue_LM4040DYM3-2.5-TR-LM4040DYM3-2.5-TR-heating-control-rescue" 750 200 50 H V L CNN
 F2 "SOT95P237X111-3N" 750 100 50 H I L CNN
 F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005757A.pdf" 750 0 50 H I L CNN
 F4 "Microchip Technology LM4040DYM3-2.5-TR, Shunt Precision Voltage Reference 2.5V, +/-1% 3-Pin, SOT-23" 750 -100 50 H I L CNN "Description"
@@ -397,11 +493,11 @@ X NC 3 900 0 200 L 50 50 0 0 N
 ENDDRAW
 ENDDEF
 #
-# heating-control-rescue_PCF8563T_5,518-PCF8563T_5_518
+# heating-control-rescue_PCF8563T_5,518-PCF8563T_5_518-heating-control-rescue
 #
-DEF heating-control-rescue_PCF8563T_5,518-PCF8563T_5_518 IC 0 30 Y Y 1 F N
+DEF heating-control-rescue_PCF8563T_5,518-PCF8563T_5_518-heating-control-rescue IC 0 30 Y Y 1 F N
 F0 "IC" 1050 300 50 H V L CNN
-F1 "heating-control-rescue_PCF8563T_5,518-PCF8563T_5_518" 1050 200 50 H V L CNN
+F1 "heating-control-rescue_PCF8563T_5,518-PCF8563T_5_518-heating-control-rescue" 1050 200 50 H V L CNN
 F2 "SOIC127P600X175-8N" 1050 100 50 H I L CNN
 F3 "http://www.nxp.com/docs/en/data-sheet/PCF8563.pdf" 1050 0 50 H I L CNN
 F4 "Real Time Clock" 1050 -100 50 H I L CNN "Description"
@@ -421,11 +517,11 @@ X VDD 8 1200 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# heating-control-rescue_VXO7803-500-M-TR-VXO7803-500-M-TR
+# heating-control-rescue_VXO7803-500-M-TR-VXO7803-500-M-TR-heating-control-rescue
 #
-DEF heating-control-rescue_VXO7803-500-M-TR-VXO7803-500-M-TR IC 0 30 Y Y 1 F N
+DEF heating-control-rescue_VXO7803-500-M-TR-VXO7803-500-M-TR-heating-control-rescue IC 0 30 Y Y 1 F N
 F0 "IC" 1350 300 50 H V L CNN
-F1 "heating-control-rescue_VXO7803-500-M-TR-VXO7803-500-M-TR" 1350 200 50 H V L CNN
+F1 "heating-control-rescue_VXO7803-500-M-TR-VXO7803-500-M-TR-heating-control-rescue" 1350 200 50 H V L CNN
 F2 "VXO7803500MTR" 1350 100 50 H I L CNN
 F3 "" 1350 0 50 H I L CNN
 F4 "Non-Isolated DC/DC Converters dc-dc non-isolated, 0.5 A, 4.75~36 Vdc input, 3.3 Vdc output, SMT, open frame, tape and reel" 1350 -100 50 H I L CNN "Description"
